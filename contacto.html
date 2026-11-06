@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - FC Barcelona</title>
+</head>
+
+<body>
+    <h1>Contacto</h1>
+
+    <nav aria-label="Navegación principal">
+        <ul>
+            <li><a href="inicio.html">Enlace a inicio</a></li>
+            <li><a href="informacion.html">Enlace a información</a></li>
+        </ul>
+    </nav>
+
+    <h2>Datos de contacto</h2>
+
+    <ul>
+        <li><strong>Ubicación:</strong> Carrer d'Arístides Maillol, 12-18, 08028 Barcelona (distrito de Les Corts,
+            barrio de la Maternitat i Sant Ramon)</li>
+        <li><strong>Correo electrónico:</strong> <a href="mailto:oab@fcbarcelona.cat">oab@fcbarcelona.cat</a></li>
+        <li><strong>Teléfono de contacto:</strong> <a href="tel:+34934963600">+34 93 496 36 00</a></li>
+        <li><strong>Horario de atención telefónica:</strong> De lunes a viernes, de 9:00 a 20:00</li>
+    </ul>
+
+    <h2>Formulario de contacto</h2>
+
+    <form action="resumen.php" method="get">
+        <fieldset>
+            <legend>Escríbenos</legend>
+
+            <p>
+                <label for="nombre">Nombre *</label><br>
+                <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </p>
+
+            <p>
+                <label for="email">Correo electrónico *</label><br>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </p>
+
+            <p>
+                <label for="motivo">Motivo de contacto</label><br>
+                <select id="motivo" name="motivo">
+                    <option value="">Elige una opción</option>
+                    <option value="socio">Información para hacerse socio</option>
+                    <option value="prensa">Prensa</option>
+                    <option value="voluntariado">Voluntariado</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="mensaje">Mensaje *</label><br>
+                <textarea id="mensaje" name="mensaje" rows="8" cols="50" required></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <label for="privacidad">He leído y acepto el tratamiento de mis datos para responder a esta consulta
+                    *</label>
+            </p>
+
+            <p>
+                <button type="submit">Enviar mensaje</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>
